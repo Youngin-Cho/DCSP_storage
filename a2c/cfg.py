@@ -9,10 +9,10 @@ def get_cfg():
     parser.add_argument("--load_model", type=int, default=0, help="load the trained model")
 
     parser.add_argument("--load_model_path", type=str, default=None, help="file to load trained models from")
-    parser.add_argument("--save_model_dir", type=str, default="./output/train/model/", help="folder to save trained models")
-    parser.add_argument("--save_log_dir", type=str, default="./output/train/log/", help="folder to save logs")
+    parser.add_argument("--save_model_dir", type=str, default="/output/train/model/", help="folder to save trained models")
+    parser.add_argument("--save_log_dir", type=str, default="/output/train/log/", help="folder to save logs")
     parser.add_argument("--load_val_dir", type=str, default="./input/validation/8-15/", help="folder to load validation data from")
-    parser.add_argument("--vessl", type=int, default=0, help="Use vessl")
+    parser.add_argument("--vessl", type=int, default=1, help="Use vessl")
 
     parser.add_argument("--num_piles", type=int, default=8, help="number of target piles")
     parser.add_argument("--num_plates", type=int, default=40, help="average number of plates")
